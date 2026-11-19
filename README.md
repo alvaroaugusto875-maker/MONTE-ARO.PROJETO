@@ -4,9 +4,9 @@ Site institucional e vitrine de pneus, aros e acessórios da **Monte-Aro**, feit
 
 Não há backend próprio: o catálogo é estático e o carrinho fica salvo no `localStorage` do navegador.
 
-  ### PROJETO DE EXTENSÃO EM DESENVOLVIMENTO DE SOFTWARE
+  ## PROJETO DE EXTENSÃO EM DESENVOLVIMENTO DE SOFTWARE
   ### FACULDADE UNINOVE
-  ## MEMBROS 
+  ### MEMBROS 
 Samuel Salmi RA - 1726203098  ( Líder ) , Álvaro Augusto Ribeiro Oliveira RA - 1726202964,  Eduardo Amancio da Silva RA - 426104086, Felipe da Costa Pereira RA - 926119964, João Guilherme Lourenço da Silva RA - 926108244, Joyce Ione da Silva RA - 1726200467, Mateus Mendes Pinto RA - 926205200, Pedro Henrique Barbosa Pimentel RA - 926208606, Wladimir de Almeida Neto RA - 1726202283
 
 ---

@@ -10,7 +10,7 @@ Não há backend próprio: o catálogo é estático e o carrinho fica salvo no `
 
 **Projeto de Extensão em Desenvolvimento de Software** — Faculdade UNINOVE.
 
-| Integrante | RA |
+| Integrantes | RA |
 |---|---|
 | Samuel Salmi (líder) | 1726203098 |
 | Álvaro Augusto Ribeiro Oliveira | 1726202964 |
@@ -24,8 +24,6 @@ Não há backend próprio: o catálogo é estático e o carrinho fica salvo no `
 
   ### PROJETO DE EXTENSÃO EM DESENVOLVIMENTO DE SOFTWARE
   ### FACULDADE UNINOVE
-  ## MEMBROS 
-Samuel Salmi RA - 1726203098  ( Líder ) , Álvaro Augusto Ribeiro Oliveira RA - 1726202964,  Eduardo Amancio da Silva RA - 426104086, Felipe da Costa Pereira RA - 926119964, João Guilherme Lourenço da Silva RA - 926108244, Joyce Ione da Silva RA - 1726200467, Mateus Mendes Pinto RA - 926205200, Pedro Henrique Barbosa Pimentel RA - 926208606, Wladimir de Almeida Neto RA - 1726202283
 
 ---
 
@@ -210,7 +208,6 @@ O `Carrinho/carrinho.js` já cuida do clique, do contador e do redirecionamento.
 
 ## Limitações conhecidas
 
-- A página `Marcas/Marcas.html` está ligada ao cabeçalho, mas os botões "Ver Detalhes" apontam para `pirelli.html`, `michelin.html`, `goodyear.html` e `bridgestone.html`, que ainda não existem na pasta `Marcas`. As logos das marcas vêm de URLs externas (precisam de internet).
 - Não existe checkout nem pagamento: o carrinho é só uma lista local.
 - O carrinho é por navegador — não sincroniza entre dispositivos nem com a conta.
 - A busca do cabeçalho é visual (não filtra produtos).

@@ -4,9 +4,27 @@ Site institucional e vitrine de pneus, aros e acessórios da **Monte-Aro**, feit
 
 Não há backend próprio: o catálogo é estático e o carrinho fica salvo no `localStorage` do navegador.
 
-  ## PROJETO DE EXTENSÃO EM DESENVOLVIMENTO DE SOFTWARE
+---
+
+## Projeto de extensão
+
+**Projeto de Extensão em Desenvolvimento de Software** — Faculdade UNINOVE.
+
+| Integrante | RA |
+|---|---|
+| Samuel Salmi (líder) | 1726203098 |
+| Álvaro Augusto Ribeiro Oliveira | 1726202964 |
+| Eduardo Amancio da Silva | 426104086 |
+| Felipe da Costa Pereira | 926119964 |
+| João Guilherme Lourenço da Silva | 926108244 |
+| Joyce Ione da Silva | 1726200467 |
+| Mateus Mendes Pinto | 926205200 |
+| Pedro Henrique Barbosa Pimentel | 926208606 |
+| Wladimir de Almeida Neto | 1726202283 |
+
+  ### PROJETO DE EXTENSÃO EM DESENVOLVIMENTO DE SOFTWARE
   ### FACULDADE UNINOVE
-  ### MEMBROS 
+  ## MEMBROS 
 Samuel Salmi RA - 1726203098  ( Líder ) , Álvaro Augusto Ribeiro Oliveira RA - 1726202964,  Eduardo Amancio da Silva RA - 426104086, Felipe da Costa Pereira RA - 926119964, João Guilherme Lourenço da Silva RA - 926108244, Joyce Ione da Silva RA - 1726200467, Mateus Mendes Pinto RA - 926205200, Pedro Henrique Barbosa Pimentel RA - 926208606, Wladimir de Almeida Neto RA - 1726202283
 
 ---
@@ -37,6 +55,9 @@ MonteAro/
 ├── Acessórios/
 │   ├── Acessórios.html        Página de acessórios
 │   └── style.css
+├── Marcas/
+│   ├── Marcas.html            Catálogo de marcas (Pirelli, Michelin, Goodyear, Bridgestone)
+│   └── Marcas.css
 ├── Carrinho/
 │   ├── carrinho.html          Página do carrinho (3 ofertas + lista + total)
 │   ├── styles.css             Estilos próprios do carrinho
@@ -65,7 +86,7 @@ MonteAro/
 └── imagens/                   Logos, banners e fotos dos produtos
 ```
 
-**Total:** 25 páginas HTML.
+**Total:** 26 páginas HTML.
 
 ---
 
@@ -79,6 +100,7 @@ MonteAro/
 | Aros | `Aros/aros.html` | Catálogo de rodas |
 | Aro (produto) | `Aros/*.html` | Mesma estrutura dos pneus |
 | Acessórios | `Acessórios/Acessórios.html` | Produtos de limpeza e cuidados |
+| Marcas | `Marcas/Marcas.html` | Cards das marcas com botão "Ver Detalhes" |
 | Carrinho | `Carrinho/carrinho.html` | Lista, quantidades, total e ofertas "VEJA TAMBÉM" |
 | Login | `Login/login.html` | E-mail e senha (Firebase) |
 | Perfil | `Perfil/perfil.html` | Só abre com usuário logado |
@@ -165,6 +187,8 @@ O `Carrinho/carrinho.js` já cuida do clique, do contador e do redirecionamento.
 ## Cabeçalho e layout
 
 - **Cabeçalho do site:** `.faixa-contato` (faixa preta) + `header.cabecalho` (amarelo) + `.menu-categorias` (preto). Está em `css/style.css` e é repetido em todas as páginas internas.
+- **Menu:** Pneus, Marcas, Aros, Acessórios e Suporte. O item **Marcas** aponta para `Marcas/Marcas.html` em todas as páginas e fica marcado como ativo nessa página. A seção "Marcas em destaque" da home continua lá (`id="marcas"`), agora acessível apenas rolando a página.
+- **Página de Marcas:** usa `../css/style.css` (cabeçalho) + `Marcas.css` (conteúdo). O `Marcas.css` tem fundo amarelo próprio e regras de `button` escopadas em `.marcas-grid` para não afetar o botão de busca do cabeçalho.
 - **Carrinho:** por ter um CSS antigo com regras globais de `header` e `.container`, o cabeçalho foi copiado para `Carrinho/cabecalho.css`, todo escopado em `.cabecalho-site`. **Se o cabeçalho do site mudar, atualize esse arquivo também.**
 - **Paleta:** amarelo `#f4b32b`, preto `#171717`, fundo `#f6f6f4`.
 - **Fundo do carrinho:** camada fixa com `fundoMonteAro4k.jpg.jpeg`, centralizada e levemente ampliada para a logo aparecer abaixo dos cards.
@@ -186,6 +210,7 @@ O `Carrinho/carrinho.js` já cuida do clique, do contador e do redirecionamento.
 
 ## Limitações conhecidas
 
+- A página `Marcas/Marcas.html` está ligada ao cabeçalho, mas os botões "Ver Detalhes" apontam para `pirelli.html`, `michelin.html`, `goodyear.html` e `bridgestone.html`, que ainda não existem na pasta `Marcas`. As logos das marcas vêm de URLs externas (precisam de internet).
 - Não existe checkout nem pagamento: o carrinho é só uma lista local.
 - O carrinho é por navegador — não sincroniza entre dispositivos nem com a conta.
 - A busca do cabeçalho é visual (não filtra produtos).
